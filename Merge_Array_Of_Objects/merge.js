@@ -24,4 +24,10 @@ let topicCheck = {};
           }
           topic.addChild({id:doc.id,subTopic:doc.subTopic});        
     });
-console.log(topicCheck);
+console.log(topicCheck);  // prints the merged array of objects
+
+
+//To Traverse the objects
+   Object.keys(topicCheck).forEach((doc)=>{
+    console.log(doc,topicCheck[doc]);
+  })
